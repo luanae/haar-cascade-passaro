@@ -1,0 +1,5 @@
+C:/fontes/proc_imagens_2025_1/haar_cascade_passaros/dataset/positives/img.png 1 77 15 182 158
+C:/fontes/proc_imagens_2025_1/haar_cascade_passaros/dataset/positives/img_1.png 1 78 16 120 130
+C:/fontes/proc_imagens_2025_1/haar_cascade_passaros/dataset/positives/img_2.png 1 81 33 152 128
+C:/fontes/proc_imagens_2025_1/haar_cascade_passaros/dataset/positives/img_3.png 1 42 34 143 114
+C:/fontes/proc_imagens_2025_1/haar_cascade_passaros/dataset/positives/img_4.png 1 76 20 119 141
