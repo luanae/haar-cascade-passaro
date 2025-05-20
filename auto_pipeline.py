@@ -14,7 +14,7 @@ NEGATIVES_FILE = os.path.join(ANNOTATIONS_PATH, "negatives.txt")
 VEC_FILE = os.path.join(VEC_DIR, "positives.vec")
 CASCADE_XML = os.path.join(CASCADE_DIR, "cascade.xml")
 
-# Caminho dos executáveis OpenCV (ajuste conforme necessário)
+# Executáveis OpenCV
 CREATESAMPLES_PATH = r"C:\opencv\build\x64\vc15\bin\opencv_createsamples.exe"
 TRAINCASCADE_PATH = r"C:\opencv\build\x64\vc15\bin\opencv_traincascade.exe"
 
@@ -58,6 +58,8 @@ def marcar_imagens():
                 print(f"[!] Erro ao abrir: {caminho}")
                 continue
 
+            altura, largura = img.shape[:2]
+
             img_copy = img.copy()
             cv2.namedWindow("Selecione o objeto")
             cv2.setMouseCallback("Selecione o objeto", draw_rectangle)
@@ -66,12 +68,16 @@ def marcar_imagens():
             print(f"🔍 Marque o objeto em: {nome_arquivo}. Pressione [ENTER] para confirmar ou [ESC] para pular.")
             while True:
                 key = cv2.waitKey(0) & 0xFF
-                if key == 13 and bbox and bbox[2] > 0 and bbox[3] > 0:  # ENTER + bbox válida
-                    full_path = os.path.abspath(caminho).replace("\\", "/")
-                    f.write(f"{full_path} 1 {bbox[0]} {bbox[1]} {bbox[2]} {bbox[3]}\n")
-                    print(f"[✓] Salvo: {bbox}")
+                if key == 13 and bbox and bbox[2] > 0 and bbox[3] > 0:
+                    x, y, w, h = bbox
+                    if (x + w <= largura) and (y + h <= altura):
+                        full_path = os.path.abspath(caminho).replace("\\", "/")
+                        f.write(f"{full_path} 1 {x} {y} {w} {h}\n")
+                        print(f"[✓] Salvo: {bbox}")
+                    else:
+                        print(f"[✗] Bounding box fora dos limites. Ignorada: {bbox}")
                     break
-                elif key == 27:  # ESC
+                elif key == 27:
                     print("[!] Imagem ignorada.")
                     break
 
@@ -92,20 +98,49 @@ def contar_amostras():
     with open(POSITIVES_FILE, "r") as f:
         return sum(1 for line in f if line.strip())
 
+def validar_anotacoes():
+    print("[INFO] Validando anotações...")
+    erros = 0
+    with open(POSITIVES_FILE, "r") as f:
+        for linha in f:
+            partes = linha.strip().split()
+            if len(partes) != 6:
+                print("[!] Formato inválido:", linha)
+                erros += 1
+                continue
+
+            img_path, _, x, y, w, h = partes
+            x, y, w, h = map(int, (x, y, w, h))
+            img = cv2.imread(img_path)
+            if img is None:
+                print(f"[!] Imagem não encontrada: {img_path}")
+                erros += 1
+                continue
+
+            altura, largura = img.shape[:2]
+            if x + w > largura or y + h > altura:
+                print(f"[✗] BBox fora dos limites: {img_path} ({x},{y},{w},{h})")
+                erros += 1
+
+    if erros == 0:
+        print("[✓] Todas as anotações são válidas.")
+    else:
+        print(f"[!] {erros} erro(s) encontrados. Corrija antes de continuar.")
+        exit()
+
 def gerar_vec():
     os.makedirs(VEC_DIR, exist_ok=True)
     total_amostras = contar_amostras()
-
     if total_amostras < 5:
-        print(f"[!] Você precisa de pelo menos 5 amostras para treinar. Atualmente tem: {total_amostras}")
+        print(f"[!] Mínimo de 5 amostras exigido. Encontradas: {total_amostras}")
         exit()
 
-    # Executar no diretório das anotações
     info_abspath = os.path.abspath(POSITIVES_FILE)
     vec_abspath = os.path.abspath(VEC_FILE)
     annotations_dir = os.path.dirname(info_abspath)
     info_filename = os.path.basename(info_abspath)
 
+    # Criação do .vec com o MESMO número de amostras do .txt
     cmd = [
         CREATESAMPLES_PATH,
         "-info", info_filename,
@@ -116,12 +151,18 @@ def gerar_vec():
     ]
 
     print("Executando:", " ".join(cmd))
-    subprocess.run(cmd, check=True, cwd=annotations_dir)
-    print("[✓] Arquivo .vec criado com sucesso.")
+    result = subprocess.run(cmd, cwd=annotations_dir)
 
-def treinar_cascade():
-    total_amostras = contar_amostras()
-    num_pos = max(1, total_amostras - 2)  # segurança
+    if result.returncode != 0:
+        print("[✗] Falha ao gerar .vec")
+        exit()
+
+    print(f"[✓] Arquivo .vec criado com sucesso com {total_amostras} amostras.")
+    return total_amostras
+
+
+def treinar_cascade(num_amostras_validas):
+    num_pos = max(1, num_amostras_validas - 1)
 
     os.makedirs(CASCADE_DIR, exist_ok=True)
     bg_path = os.path.abspath(NEGATIVES_FILE).replace("\\", "/")
@@ -136,39 +177,21 @@ def treinar_cascade():
         "-numNeg", "50",
         "-numStages", "10",
         "-w", "50",
-        "-h", "50"
+        "-h", "50",
+        "-maxFalseAlarmRate", "0.5",
+        "-minHitRate", "0.995"
     ]
 
     print("Executando:", " ".join(cmd))
     subprocess.run(cmd, check=True)
     print("[✓] Modelo Haar Cascade treinado com sucesso.")
 
-def detectar(imagem_path):
-    cascade_path = os.path.join(CASCADE_DIR, "cascade.xml")
-    if not os.path.exists(cascade_path):
-        print("[!] Classificador ainda não treinado.")
-        return
-
-    detector = cv2.CascadeClassifier(cascade_path)
-    img = cv2.imread(imagem_path)
-    if img is None:
-        print(f"[!] Imagem inválida: {imagem_path}")
-        return
-
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    objetos = detector.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(50, 50))
-
-    for (x, y, w, h) in objetos:
-        cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
-
-    cv2.imshow("Resultado", img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
 
 # Execução principal
 if __name__ == "__main__":
     marcar_imagens()
     gerar_negatives_txt()
-    gerar_vec()
-    treinar_cascade()
-    #detectar("teste.jpg")  # Descomente para testar uma imagem
+    validar_anotacoes()
+    total_valido = gerar_vec()
+    treinar_cascade(total_valido)
+
