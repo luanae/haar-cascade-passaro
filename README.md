@@ -39,7 +39,54 @@ Editar
 ## ⚙️ Requisitos
 
 - Python 3.10+
-- OpenCV 3.4.11 (com os binários `opencv_createsamples.exe` e `opencv_traincascade.exe` instalados)
+🧩 Instalação do OpenCV 3.4.11 com Executáveis para Treinamento
+Para treinar seu classificador Haar Cascade, é necessário utilizar dois executáveis do OpenCV:
+
+opencv_createsamples.exe
+
+opencv_traincascade.exe
+
+Siga os passos abaixo para instalá-los corretamente:
+
+🔽 1. Baixar o OpenCV 3.4.11
+Acesse o link abaixo e baixe o instalador:
+
+📎 Download OpenCV 3.4.11 (vc14_vc15)
+
+📦 2. Extrair para o disco local C:
+Após o download:
+
+Execute o instalador opencv-3.4.11-vc14_vc15.exe.
+
+Ele pedirá um local para extração. Escolha:
+
+makefile
+Copiar
+Editar
+C:\opencv\
+Isso criará a estrutura:
+
+makefile
+Copiar
+Editar
+C:\opencv\build\x64\vc15\bin\
+🛠 3. Adicionar ao PATH do Windows
+Para usar os executáveis de qualquer lugar, adicione a pasta bin ao PATH do sistema:
+
+Pressione Win + S, digite "variáveis de ambiente" e abra.
+
+Clique em "Variáveis de Ambiente".
+
+Em "Variáveis do sistema", selecione Path e clique em Editar.
+
+Adicione o seguinte caminho:
+
+makefile
+Copiar
+Editar
+C:\opencv\build\x64\vc15\bin
+Clique em OK até fechar todas as janelas.
+
 - Instalar dependências:
   ```bash
   pip install opencv-python
