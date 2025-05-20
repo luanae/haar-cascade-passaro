@@ -1,5 +1,5 @@
-C:/fontes/proc_imagens_2025_1/haar_cascade_passaros/dataset/positives/img.png 1 77 15 182 158
-C:/fontes/proc_imagens_2025_1/haar_cascade_passaros/dataset/positives/img_1.png 1 78 16 120 130
-C:/fontes/proc_imagens_2025_1/haar_cascade_passaros/dataset/positives/img_2.png 1 81 33 152 128
-C:/fontes/proc_imagens_2025_1/haar_cascade_passaros/dataset/positives/img_3.png 1 42 34 143 114
-C:/fontes/proc_imagens_2025_1/haar_cascade_passaros/dataset/positives/img_4.png 1 76 20 119 141
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/img.png 1 103 33 124 140
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/img_1.png 1 88 19 102 121
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/img_2.png 1 76 26 152 146
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/img_3.png 1 34 29 158 125
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/img_4.png 1 80 20 115 141
