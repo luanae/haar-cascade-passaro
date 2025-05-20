@@ -3,7 +3,14 @@
 Este projeto oferece um pipeline completo para **treinamento, validação e teste de um classificador Haar Cascade personalizado**, utilizando a biblioteca OpenCV. O objetivo é treinar um modelo eficiente para detectar objetos específicos (como pássaros, livros, etc.) com base em imagens positivas anotadas manualmente e imagens negativas.
 
 ---
+## Descrição do Projeto
+Este projeto foi realizado em dupla para a disciplina de Visão Computacional.
 
+- Objeto detectado: Pássaros.
+- Total de imagens positivas: 150.
+- Total de imagens negativas: 250.
+
+---
 ## 📁 Estrutura do Projeto
 
 haar-cascade/
@@ -121,34 +128,3 @@ Você poderá:
 Testar uma imagem (local ou link)
 
 Testar um diretório completo com várias imagens
-
-⚙️ Parâmetros de Treinamento
-Tamanho da janela: 50x50
-
-Estágios: 20
-
-Positivos: 90% do total anotado
-
-Negativos: 800 imagens
-
-minHitRate: 0.995
-
-maxFalseAlarmRate: 0.3
-
-⚠️ Tempo estimado de treinamento: até 3 horas, dependendo do hardware e número de imagens.
-
-📊 Relatório
-Após os testes, o script detect_custom.py gera automaticamente um relatório em:
-
-bash
-Copiar
-Editar
-resultados/relatorio.txt
-O relatório inclui:
-
-Nome da imagem processada
-
-Total de objetos detectados
-
-Coordenadas de cada detecção (x, y, largura, altura)
-
