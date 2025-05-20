@@ -1,7 +1,7 @@
 # Haar Cascade - Pássaros
 
 ## Objetivo
-Treinar um classificador Haar Cascade personalizado para detectar um pássaros.
+Treinar um classificador Haar Cascade personalizado para detectar pássaros.
 
 ## Descrição do Projeto
 Este projeto foi realizado em dupla para a disciplina de Visão Computacional.
