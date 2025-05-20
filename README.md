@@ -152,6 +152,3 @@ Total de objetos detectados
 
 Coordenadas de cada detecção (x, y, largura, altura)
 
-👨‍💻 Autor
-Desenvolvido por [Seu Nome Aqui]
-Para fins acadêmicos e de aprendizado sobre visão computacional com OpenCV.
