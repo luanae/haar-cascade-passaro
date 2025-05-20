@@ -2,27 +2,29 @@ import cv2
 import os
 import subprocess
 
-# Caminhos principais
-POSITIVE_PATH = "dataset/positives"
-NEGATIVE_PATH = "dataset/negatives"
-ANNOTATIONS_PATH = "annotations"
-VEC_DIR = "vec"
-CASCADE_DIR = "cascade"
+# ==== Caminhos principais ====
+POSITIVE_PATH = "dataset/positives"      # Imagens com o objeto (positivas)
+NEGATIVE_PATH = "dataset/negatives"      # Imagens sem o objeto (negativas)
+ANNOTATIONS_PATH = "annotations"         # Onde serão salvas as anotações manuais
+VEC_DIR = "vec"                          # Pasta onde será salvo o arquivo .vec
+CASCADE_DIR = "cascade"                  # Pasta onde será salvo o modelo treinado
 
+# ==== Arquivos gerados ====
 POSITIVES_FILE = os.path.join(ANNOTATIONS_PATH, "positives.txt")
 NEGATIVES_FILE = os.path.join(ANNOTATIONS_PATH, "negatives.txt")
 VEC_FILE = os.path.join(VEC_DIR, "positives.vec")
 CASCADE_XML = os.path.join(CASCADE_DIR, "cascade.xml")
 
-# Executáveis OpenCV
+# ==== Caminho dos executáveis OpenCV ====
 CREATESAMPLES_PATH = r"C:\opencv\build\x64\vc15\bin\opencv_createsamples.exe"
 TRAINCASCADE_PATH = r"C:\opencv\build\x64\vc15\bin\opencv_traincascade.exe"
 
-# Variáveis globais de marcação
-drawing = False
-ix, iy = -1, -1
-bbox = []
+# ==== Variáveis globais de anotação ====
+drawing = False     # Flag de desenho
+ix, iy = -1, -1     # Coordenadas iniciais do mouse
+bbox = []           # Lista da bounding box [x, y, w, h]
 
+# ==== Função para desenhar retângulo com o mouse ====
 def draw_rectangle(event, x, y, flags, param):
     global ix, iy, drawing, bbox, img_copy
 
@@ -44,6 +46,7 @@ def draw_rectangle(event, x, y, flags, param):
             cv2.rectangle(img_copy, (x0, y0), (x0 + w, y0 + h), (0, 255, 0), 2)
             cv2.imshow("Selecione o objeto", img_copy)
 
+# ==== Função para marcar as regiões nas imagens positivas ====
 def marcar_imagens():
     os.makedirs(ANNOTATIONS_PATH, exist_ok=True)
     imagens = sorted([f for f in os.listdir(POSITIVE_PATH) if f.lower().endswith((".jpg", ".jpeg", ".png"))])
@@ -85,6 +88,7 @@ def marcar_imagens():
 
     print("[✓] Todas as anotações foram salvas em:", POSITIVES_FILE)
 
+# ==== Gera negatives.txt com lista das imagens negativas ====
 def gerar_negatives_txt():
     os.makedirs(ANNOTATIONS_PATH, exist_ok=True)
     with open(NEGATIVES_FILE, 'w') as f:
@@ -94,10 +98,12 @@ def gerar_negatives_txt():
                 f.write(f"{full_path}\n")
     print("[✓] Arquivo negatives.txt gerado.")
 
+# ==== Conta o número de amostras positivas anotadas ====
 def contar_amostras():
     with open(POSITIVES_FILE, "r") as f:
         return sum(1 for line in f if line.strip())
 
+# ==== Valida se todas as anotações são consistentes ====
 def validar_anotacoes():
     print("[INFO] Validando anotações...")
     erros = 0
@@ -128,6 +134,7 @@ def validar_anotacoes():
         print(f"[!] {erros} erro(s) encontrados. Corrija antes de continuar.")
         exit()
 
+# ==== Gera o arquivo .vec usado no treinamento ====
 def gerar_vec():
     os.makedirs(VEC_DIR, exist_ok=True)
     total_amostras = contar_amostras()
@@ -140,7 +147,6 @@ def gerar_vec():
     annotations_dir = os.path.dirname(info_abspath)
     info_filename = os.path.basename(info_abspath)
 
-    # Criação do .vec com o MESMO número de amostras do .txt
     cmd = [
         CREATESAMPLES_PATH,
         "-info", info_filename,
@@ -160,9 +166,9 @@ def gerar_vec():
     print(f"[✓] Arquivo .vec criado com sucesso com {total_amostras} amostras.")
     return total_amostras
 
-
+# ==== Treinamento do classificador Haar Cascade ====
 def treinar_cascade(num_amostras_validas):
-    num_pos = max(1, num_amostras_validas - 1)
+    num_pos = max(1, num_amostras_validas - 1)  # Evita crash se tiver 1 amostra
 
     os.makedirs(CASCADE_DIR, exist_ok=True)
     bg_path = os.path.abspath(NEGATIVES_FILE).replace("\\", "/")
@@ -186,12 +192,10 @@ def treinar_cascade(num_amostras_validas):
     subprocess.run(cmd, check=True)
     print("[✓] Modelo Haar Cascade treinado com sucesso.")
 
-
-# Execução principal
+# ==== Execução principal ====
 if __name__ == "__main__":
-    marcar_imagens()
-    gerar_negatives_txt()
-    validar_anotacoes()
-    total_valido = gerar_vec()
-    treinar_cascade(total_valido)
-
+    marcar_imagens()             # Marcação manual das imagens positivas
+    gerar_negatives_txt()        # Geração do negatives.txt
+    validar_anotacoes()          # Validação de bounding boxes
+    total_valido = gerar_vec()   # Criação do .vec
+    treinar_cascade(total_valido) # Treinamento do modelo
