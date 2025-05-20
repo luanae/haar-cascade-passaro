@@ -174,7 +174,7 @@ def treinar_cascade(num_amostras_validas):
         "-vec", vec_path,
         "-bg", bg_path,
         "-numPos", str(num_pos),
-        "-numNeg", "50",
+        "-numNeg", "200",
         "-numStages", "10",
         "-w", "50",
         "-h", "50",
