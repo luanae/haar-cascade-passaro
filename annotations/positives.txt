@@ -1,6 +1,129 @@
-C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/1.jpg 1 75 15 173 162
-C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/10.jpg 1 154 40 80 96
-C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/100.jpg 1 54 138 228 257
-C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/101.jpg 1 39 34 174 339
-C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/102.jpg 1 12 14 194 242
-C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/103.jpg 1 199 25 317 656
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/1.jpg 1 74 14 167 155
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/10.jpg 1 153 39 93 101
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/100.jpg 2 64 132 211 213 289 30 146 356
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/101.jpg 1 49 44 166 302
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/102.jpg 1 14 16 203 255
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/103.jpg 1 205 34 304 635
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/104.jpg 1 42 70 266 319
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/105.jpg 1 75 59 242 382
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/106.jpg 1 113 49 158 330
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/107.jpg 1 251 310 190 191
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/108.jpg 1 95 95 324 384
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/109.jpg 1 322 27 335 622
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/11.jpg 1 111 98 40 50
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/110.jpg 1 207 108 229 317
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/111.jpg 1 58 110 377 473
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/112.jpg 1 86 65 233 509
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/113.jpg 2 70 118 393 564 469 686 5 3
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/114.jpg 2 135 120 297 231 64 297 171 222
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/115.jpg 2 165 217 182 209 273 130 299 271
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/116.jpg 5 112 88 217 149 65 255 248 163 88 456 292 277 351 683 146 107 430 49 170 125
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/117.jpg 1 184 76 302 545
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/118.jpg 2 148 212 140 200 360 230 131 155
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/119.jpg 1 51 197 584 473
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/12.jpg 3 18 3 63 57 50 65 51 30 173 4 72 61
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/120.jpg 2 141 118 212 213 352 117 254 318
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/121.jpg 1 130 46 393 217
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/122.jpg 2 56 3 157 217 184 119 146 207
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/123.jpg 1 45 84 111 90
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/124.jpg 1 127 169 287 227
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/125.jpg 2 160 178 157 163 155 368 126 99
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/126.jpg 1 63 121 634 685
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/127.jpg 1 37 43 166 181
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/128.jpg 1 130 96 467 551
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/129.jpg 2 49 180 485 379 194 603 175 164
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/13.jpg 3 52 100 63 50 95 9 62 41 181 128 73 53
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/130.jpg 1 157 49 396 320
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/131.jpg 1 114 104 471 380
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/133.jpg 2 148 225 146 78 304 214 133 180
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/134.jpg 1 131 63 217 276
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/135.jpg 1 206 284 206 173
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/136.jpg 1 69 420 331 346
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/137.jpg 1 231 238 354 454
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/138.jpg 1 173 136 436 471
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/139.jpg 1 367 470 135 146
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/14.jpg 1 90 71 72 37
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/140.jpg 1 104 68 191 313
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/141.jpg 1 150 452 376 344
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/142.jpg 1 140 180 445 254
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/143.jpg 1 170 39 225 287
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/144.jpg 1 150 283 356 313
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/145.jpg 1 82 204 171 212
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/146.jpg 1 92 141 330 521
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/15.jpg 2 94 62 53 66 121 16 90 108
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/16.jpg 1 117 91 32 36
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/18.jpg 1 69 112 44 51
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/19.jpg 2 70 48 31 54 101 63 32 51
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/2.jpg 2 65 35 89 113 165 20 87 131
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/20.jpg 1 62 11 109 108
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/21.jpg 1 82 118 43 45
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/22.jpg 1 35 32 130 187
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/23.jpg 2 34 16 103 137 231 12 76 119
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/24.jpg 5 156 48 51 31 128 51 29 19 158 28 31 19 115 27 30 14 85 15 28 17
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/25.jpg 1 103 91 85 59
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/26.jpg 8 41 57 48 26 118 20 31 24 66 19 29 15 24 4 25 15 95 56 33 14 45 92 44 18 148 57 19 22 92 97 30 20
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/27.jpg 1 81 94 50 56
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/28.jpg 1 71 69 32 43
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/29.jpg 1 38 22 133 231
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/3.jpg 1 43 4 191 137
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/30.jpg 1 90 31 71 122
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/31.jpg 1 93 39 93 93
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/32.jpg 1 42 23 76 154
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/33.png 1 82 16 148 157
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/34.png 1 66 14 126 126
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/35.png 1 89 32 142 138
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/36.png 1 32 22 152 128
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/37.png 1 90 26 112 135
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/4.jpg 1 44 24 142 82
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/5.jpg 1 122 37 65 93
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/51.jpg 1 115 304 225 171
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/52.jpg 1 52 103 517 620
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/53.jpg 1 61 164 361 576
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/54.jpg 1 161 306 221 241
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/55.jpg 2 37 46 65 110 99 44 66 130
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/56.jpg 1 91 122 158 324
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/57.jpg 3 43 94 112 187 227 34 110 172 193 259 95 179
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/58.jpg 1 73 41 389 516
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/59.jpg 2 13 38 151 540 166 72 223 512
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/6.jpg 1 40 16 148 131
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/60.jpg 1 69 170 340 618
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/61.jpg 1 248 218 282 406
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/63.jpg 1 38 73 198 318
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/64.jpg 1 265 157 346 637
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/66.jpg 1 112 56 251 263
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/67.jpg 1 30 70 325 369
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/68.jpg 1 45 132 325 275
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/69.jpg 1 168 275 170 236
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/7.jpg 1 62 41 171 102
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/70.jpg 4 61 152 121 143 205 329 187 129 304 114 124 182 180 240 176 90
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/71.jpg 1 68 76 315 332
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/72.jpg 1 46 195 269 323
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/73.jpg 1 151 70 202 494
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/74.jpg 1 17 21 198 386
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/75.jpg 1 64 79 259 420
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/76.jpg 1 109 133 209 142
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/77.jpg 1 49 40 158 386
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/78.jpg 1 34 120 221 196
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/79.jpg 1 69 193 138 193
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/8.jpg 1 128 66 122 83
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/80.jpg 2 34 149 195 179 148 362 180 149
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/81.jpg 1 108 116 251 316
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/82.jpg 1 93 88 270 403
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/83.jpg 1 200 200 182 270
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/84.jpg 1 123 224 552 571
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/85.jpg 1 106 81 253 423
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/86.jpg 1 68 51 303 447
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/87.jpg 1 65 120 426 516
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/88.jpg 1 242 145 242 441
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/89.jpg 1 22 93 286 170
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/9.jpg 1 76 32 107 120
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/90.jpg 1 184 54 170 130
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/91.jpg 1 286 156 161 121
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/92.jpg 1 168 33 179 264
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/93.jpg 1 115 86 107 111
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/94.jpg 3 206 50 257 297 502 130 115 115 20 207 126 141
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/95.jpg 3 169 84 115 94 320 217 47 29 488 274 53 34
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/96.jpg 1 70 193 287 183
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/97.jpg 1 184 88 207 251
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/98.jpg 1 133 115 314 466
+C:/Fontes/proc_images_2025_1/haar-cascade-passaro/dataset/positives/99.jpg 1 81 29 150 143
