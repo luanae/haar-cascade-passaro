@@ -11,7 +11,7 @@ Este projeto foi realizado em dupla para a disciplina de Visão Computacional.
 - Total de imagens negativas: 250.
 
 ---
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 haar-cascade/
 ├── dataset/
@@ -32,7 +32,7 @@ Editar
 
 ---
 
-## ✅ Funcionalidades
+## Funcionalidades
 
 - Anotação manual interativa das imagens positivas
 - Geração automática dos arquivos `positives.txt` e `negatives.txt`
@@ -43,10 +43,10 @@ Editar
 
 ---
 
-## ⚙️ Requisitos
+## Requisitos
 
 - Python 3.10+
-🧩 Instalação do OpenCV 3.4.11 com Executáveis para Treinamento
+ Instalação do OpenCV 3.4.11 com Executáveis para Treinamento
 Para treinar seu classificador Haar Cascade, é necessário utilizar dois executáveis do OpenCV:
 
 opencv_createsamples.exe
@@ -55,12 +55,12 @@ opencv_traincascade.exe
 
 Siga os passos abaixo para instalá-los corretamente:
 
-🔽 1. Baixar o OpenCV 3.4.11
+ 1. Baixar o OpenCV 3.4.11
 Acesse o link abaixo e baixe o instalador:
 
-📎 Download OpenCV 3.4.11 (vc14_vc15)
+ Download OpenCV 3.4.11 (vc14_vc15)
 
-📦 2. Extrair para o disco local C:
+ 2. Extrair para o disco local C:
 Após o download:
 
 Execute o instalador opencv-3.4.11-vc14_vc15.exe.
@@ -77,7 +77,7 @@ makefile
 Copiar
 Editar
 C:\opencv\build\x64\vc15\bin\
-🛠 3. Adicionar ao PATH do Windows
+ 3. Adicionar ao PATH do Windows
 Para usar os executáveis de qualquer lugar, adicione a pasta bin ao PATH do sistema:
 
 Pressione Win + S, digite "variáveis de ambiente" e abra.
@@ -97,7 +97,7 @@ Clique em OK até fechar todas as janelas.
 - Instalar dependências:
   ```bash
   pip install opencv-python
-🚀 Como Usar
+ Como Usar
 1. Preparar as imagens
 Coloque imagens com o objeto de interesse em dataset/positives/
 
