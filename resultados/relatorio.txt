@@ -1,15 +1,33 @@
 === RELATÓRIO DE DETECÇÃO ===
 
-Imagem: img.png
+Imagem: passaro-01.jpg
+Total detectado(s): 3
+  [1] x=56, y=113, w=146, h=146
+  [2] x=244, y=120, w=141, h=141
+  [3] x=437, y=108, w=121, h=121
+
+Imagem: passaro-02.jpg
+Total detectado(s): 4
+  [1] x=37, y=104, w=126, h=126
+  [2] x=229, y=40, w=128, h=128
+  [3] x=253, y=169, w=133, h=133
+  [4] x=29, y=236, w=53, h=53
+
+Imagem: passaro-03.jpg
 Total detectado(s): 1
-  [1] x=73, y=15, w=133, h=133
+  [1] x=154, y=20, w=125, h=125
+
+Imagem: passaro-04.jpg
+Total detectado(s): 0
 
 Imagem: teste_01.jpg
-Total detectado(s): 6
-  [1] x=107, y=44, w=106, h=106
-  [2] x=410, y=18, w=82, h=82
-  [3] x=491, y=287, w=85, h=85
-  [4] x=537, y=151, w=88, h=88
-  [5] x=251, y=25, w=91, h=91
-  [6] x=572, y=21, w=91, h=91
+Total detectado(s): 8
+  [1] x=540, y=149, w=78, h=78
+  [2] x=409, y=11, w=72, h=72
+  [3] x=575, y=17, w=72, h=72
+  [4] x=110, y=43, w=94, h=94
+  [5] x=254, y=16, w=81, h=81
+  [6] x=497, y=281, w=88, h=88
+  [7] x=539, y=325, w=63, h=63
+  [8] x=262, y=51, w=101, h=101
 
