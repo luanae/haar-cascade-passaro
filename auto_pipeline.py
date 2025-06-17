@@ -207,11 +207,11 @@ def treinar_cascade(num_amostras_validas):
         "-vec", vec_path,
         "-bg", bg_path,
         "-numPos", str(num_pos),
-        "-numNeg", "200",
+        "-numNeg", "521",
         "-numStages", "15",
         "-w", "50",
         "-h", "50",
-        "-maxFalseAlarmRate", "0.3",
+        "-maxFalseAlarmRate", "0.2",
         "-minHitRate", "0.995"
     ]
 
